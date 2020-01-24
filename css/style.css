@@ -13,7 +13,7 @@ p{
 
 .content{
   font-size: 20px;
-  margin: 10pc;
+  margin: 10px;
   border: 10px;
   border-color: #ff0000;
 }
@@ -25,9 +25,18 @@ p{
 }
 
 body{
-  height: 100%;
+  /* height: 100%; */
 }
 
 html{
   height: 100%;
+}
+
+footer{
+  background-color: #34495e;
+position: relative;
+height: 100px;
+clear: both;
+bottom: 0px;
+padding: 20px;
 }
