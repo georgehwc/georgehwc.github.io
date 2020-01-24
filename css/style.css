@@ -1,0 +1,33 @@
+input{
+  font-size: 18px;
+}
+
+body{
+  background-color: #ffc699;
+  background-image: url("pexels-photo-949587.jpeg");
+}
+
+p{
+  color: #54b522;
+}
+
+.content{
+  font-size: 20px;
+  margin: 10pc;
+  border: 10px;
+  border-color: #ff0000;
+}
+
+.bottom-content{
+  background-color: #ffffff;
+  width: 100%;
+  bottom: auto;
+}
+
+body{
+  height: 100%;
+}
+
+html{
+  height: 100%;
+}
