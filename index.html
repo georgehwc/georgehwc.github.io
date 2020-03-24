@@ -1,33 +1,84 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Ho Wei Chan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
-    <title>hello</title>
-  </head>
-  <body>
-    <script src="js/script.js"></script>
-    <div class="content">
-      <form class="">
-      <p>First name:<br></p>
-      <input type="text" name="firstname" value="Mickey">
-      <br>
-      <p>Last name:<br></p>
-      <input type="text" name="lastname" value="Mouse">
-      <br><br>
-      <input type="submit" value="Submit">
-    </form>
+<body onload="background()">
+    <div class="home">
+        <header id="announcement">
+            <p>Ho Wei Chan personal website</p>
+        </header>
+
+        <header id="top_menu">
+
+            <a href="index.html" id="logo">George</a>
+            <nav id="menu_nav">
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </nav>
+
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn" onclick="showMenu('div1')">
+        <i class=" material-icons icons" id="menu_button">menu</i>
+      </label>
+
+
+        </header>
+
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#">LinkA</a></li>
+                <li><a href="#">LinkB</a></li>
+                <li><a href="#">LinkC</a></li>
+                <li><a href="#">LinkD</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="main" id="main">
+
+            <div class="selfie">
+                <img src="img/IMG-20190724-WA0015.jpg" alt="howeichan">
+            </div>
+
+            <div class="bounceInDown">
+                <a href="#">Ho Wei Chan</a>
+            </div>
+
+
+
+        </div>
+
+        <footer id="bot_footer">
+            <div class="social-icons">
+                <a href="mailto:p17238710@my365.dmu.ac.uk"><i class="material-icons icons">mail</i></a>
+
+            </div>
+            <div class="copyright">
+                <p>Copyright © Ho Wei Chan All Rights Reserved.</p>
+            </div>
+
+        </footer>
+
+
+
+
+
     </div>
+    <script src="js/index.js"></script>
+</body>
 
-<div class="bottom-content">
-<h1>some texttttt here</h1>
-</div>
-
-<footer class="footer-content">
-  <h1>some texttttt here</h1>
-</footer>
-
-
-  </body>
 </html>
