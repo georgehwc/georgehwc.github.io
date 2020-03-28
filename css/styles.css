@@ -111,23 +111,24 @@
     }
     
     #chk {
-        visibility: hidden;
-        z-index: -100;
+        /* visibility: hidden;
+        z-index: -100; */
     }
     
     .menu {
-        height: 50vh;
         width: 100%;
         background-color: aquamarine;
         text-align: center;
-        padding: 10px;
+        /* padding: 10px; */
         transition: 1.0s;
         line-height: normal;
-        display: none;
+        /* display: none; */
+        overflow: hidden;
+        height: 0;
     }
     
     .menu :hover {
-        display: flex;
+        /* display: flex; */
     }
     
     .menu ul {
@@ -139,10 +140,16 @@
         list-style: none;
         text-decoration: none;
         color: #242425;
+        transition: 1s;
     }
-    /* .menu :hover{
-  display: flex;
-} */
+    
+    .menu li a:hover {
+        line-height: 5;
+        list-style: none;
+        text-decoration: none;
+        color: #dcdcdc;
+        font-size: 20px;
+    }
     
     .main {
         padding: 2%;

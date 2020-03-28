@@ -8,9 +8,9 @@ function showMenu() {
     var x = document.getElementById("chk");
     var y = document.getElementById("menu");
     if (x.checked) {
-        y.style.display = "none";
+        y.style.height = "40vh";
     } else {
-        y.style.display = "flex";
+        y.style.height = "0";
     }
 
 }
