@@ -41,10 +41,36 @@ function background() {
     if (searchIndex > -1) {
         document.getElementById("main").classList.add("mainAbout");
 
+    } else {
+        //alert("test1");
+        var searchIndex = window.location.href.search("school.html");
+        if (searchIndex > -1) {
+
+            //alert("test2");
+            document.getElementById("main").classList.add("mainSchool");
+        }
     }
-
-
     document.getElementById("bot_footer").style.position = "relative";
+}
 
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var img1 = document.getElementById("szetoho");
+img1.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img2 = document.getElementById("dmu");
+img2.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
 
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    modal.style.display = "none";
 }
