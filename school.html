@@ -6,8 +6,8 @@
     <meta name="author" content="Ho Wei Chan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>George|Education</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href="../img/web-development.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/web-development.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -78,7 +78,7 @@
         <div class="container">
             <div class="content-body">
                 <div class="pic-container">
-                    <img src="../img/szetoho-badge.png" alt="Szetoho Secondary School" id="szetoho" class="showImg">
+                    <img src="img/szetoho-badge.png" alt="Szetoho Secondary School" id="szetoho" class="showImg">
                 </div>
 
                 <div class="description">
@@ -89,23 +89,23 @@
                     </p>
                     <div class="button">
                         <a href="http://www.szetoho.edu.hk/" target="_blank">Click here for more
-                        information</a>
+                            information</a>
                     </div>
                 </div>
             </div>
 
-            <div id="map">
+            <!-- <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.250461049248!2d114.23291391454802!3d22.306365548312463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401590d8a6741%3A0x2bad5730f746d11c!2z5LqU6YKR5Y-45b6S5rWp5Lit5a24!5e0!3m2!1szh-TW!2suk!4v1585668131588!5m2!1szh-TW!2suk"
                     width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-            </div>
+            </div> -->
 
         </div>
 
         <div class="container">
             <div class="content-body">
                 <div class="pic-container ">
-                    <img src="../img/DMU-jpg-1-scaled.png" alt="De Montfort University" id="dmu" class="showImg">
+                    <img src="img/DMU-jpg-1-scaled.png" alt="De Montfort University" id="dmu" class="showImg">
                 </div>
 
                 <div class="description">
@@ -121,37 +121,45 @@
 
                     <div class="button">
                         <a href="https://www.dmu.ac.uk/study/courses/undergraduate-courses/computing-bsc/computing-bsc-degree.aspx" target="_blank">Click here for more
-                                    information</a>
+                            information</a>
                     </div>
                 </div>
             </div>
 
-            <div id="map">
+            <!-- <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d19371.42072617905!2d-1.1399680353603443!3d52.634187455068044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdmu!5e0!3m2!1szh-TW!2suk!4v1585743995656!5m2!1szh-TW!2suk" width="600" height="450"
                     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-            </div>
+            </div> -->
 
+        </div>
+        <div class="container">
+
+            <div id="map-canvas">
+                <div id="map">
+
+                </div>
+
+            </div>
         </div>
 
 
         <footer id="bot_footer">
-            <div class="social-icons">
-                <a href="mailto:p17238710@my365.dmu.ac.uk"><i class="material-icons icons">mail</i></a>
+            <div class="social-icons ">
+                <a href="mailto:p17238710@my365.dmu.ac.uk "><i class="material-icons icons ">mail</i></a>
 
             </div>
-            <div class="copyright">
+            <div class="copyright ">
                 <p>Copyright © Ho Wei Chan All Rights Reserved.</p>
             </div>
 
         </footer>
 
-
-
-
-
     </div>
-    <script src="../js/about.js"></script>
+    <script src="js/about.js "></script>
+    <script src="js/mapapi.js "></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY8K4cY0GzOsQ9h0tB2T_npJsa0vRubII&callback=initMap ">
+    </script>
 </body>
 
 </html>
