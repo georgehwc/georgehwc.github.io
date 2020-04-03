@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ho Wei Chan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George|Education</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="../img/web-development.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body onload="background()">
+    <div class="home">
+        <header id="announcement">
+            <p>Ho Wei Chan personal website</p>
+        </header>
+
+        <header id="top_menu">
+
+            <a href="index.html" id="logo">George</a>
+            <nav id="menu_nav">
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </nav>
+
+
+            <label for="chk" class="show-menu-btn" onclick="showMenu('div1')">
+                <i class=" material-icons icons" id="menu_button">menu</i>
+            </label>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </header>
+
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Other</a></li>
+            </ul>
+
+        </div>
+
+        <input type="checkbox" id="chk">
+
+        <div class="main" id="main">
+
+        </div>
+        <div class="gallery-content">
+
+
+            <div class="pic-container">
+                <img src="img/IMG-20190223-WA0001.jpg" alt="">
+            </div>
+            <div class="pic-container">
+                <img src="img/IMG-20190223-WA0001.jpg" alt="">
+            </div>
+            <div class="pic-container">
+                <img src="img/IMG-20190223-WA0001.jpg" alt="">
+            </div>
+            <div class="pic-container">
+                <img src="img/IMG-20190223-WA0001.jpg" alt="">
+            </div>
+            <div class="pic-container">
+                <img src="img/IMG-20190223-WA0001.jpg" alt="">
+            </div>
+            <div class="pic-container">
+                <img src="img/IMG-20190223-WA0001.jpg" alt="">
+            </div>
+            <div class="pic-container">
+                <img src="img/IMG-20190223-WA0001.jpg" alt="">
+            </div>
+            <div class="pic-container">
+                <img src="img/IMG-20190223-WA0001.jpg" alt="">
+            </div>
+
+        </div>
+
+
+        <footer id="bot_footer">
+            <div class="social-icons">
+                <a href="mailto:p17238710@my365.dmu.ac.uk"><i class="material-icons icons">mail</i></a>
+
+            </div>
+            <div class="copyright">
+                <p>Copyright © Ho Wei Chan All Rights Reserved.</p>
+            </div>
+
+        </footer>
+
+
+
+
+
+    </div>
+    <script src="js/about.js"></script>
+</body>
+
+</html>

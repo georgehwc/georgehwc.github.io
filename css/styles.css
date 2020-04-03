@@ -196,6 +196,13 @@ body {
     min-height: 800px;
 }
 
+.mainPet {
+    background: url(../img/Image2020-04-02.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+}
+
 .mainSchool {
     background: url(../img/FDBWA_Szeto_Ho_Secondary_School_southwest_side.jfif);
     background-position: center;
@@ -287,12 +294,29 @@ body {
     display: flex;
 }
 
-.pic-container {
+.logo-container {
     width: 33%;
     padding: 30px;
 }
 
+.gallery-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.pic-container {
+    display: flex;
+}
+
 .pic-container img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo-container img {
     width: auto;
     height: auto;
     max-width: 100%;

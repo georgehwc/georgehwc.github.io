@@ -48,6 +48,13 @@ function background() {
 
             //alert("test2");
             document.getElementById("main").classList.add("mainSchool");
+        } else {
+
+            var searchIndex = window.location.href.search("mypet.html");
+            if (searchIndex > -1) {
+
+                document.getElementById("main").classList.add("mainPet");
+            }
         }
     }
     document.getElementById("bot_footer").style.position = "relative";
