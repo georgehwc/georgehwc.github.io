@@ -26,9 +26,9 @@
             <nav id="menu_nav">
                 <ul>
                     <li><a href="About.html">About</a></li>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">More</a></li>
+                    <li><a href="school.html">School</a></li>
+                    <li><a href="mypet.html">Mypet</a></li>
+                    <li><a href="#">Other</a></li>
                 </ul>
             </nav>
 
@@ -36,7 +36,11 @@
             <label for="chk" class="show-menu-btn" onclick="showMenu('div1')">
                 <i class=" material-icons icons" id="menu_button">menu</i>
             </label>
-
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
 
         </header>
         <input type="checkbox" id="chk">
@@ -86,8 +90,8 @@
                 <hr>
 
                 <div class="content-body">
-                    <div class="pic-container">
-                        <img src="img/MTA-Security-Fundamentals-2019.png" alt="">
+                    <div class="logo-container showImg">
+                        <img src="img/MTA-Security-Fundamentals-2019.png" alt="" id="mta-logo">
                     </div>
 
                     <div class="description">

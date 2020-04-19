@@ -12,20 +12,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body onload="background()">
+<body onload="background()" id="body">
     <div class="home">
         <header id="announcement">
             <p>Ho Wei Chan personal website</p>
         </header>
 
         <header id="top_menu">
-
             <a href="index.html" id="logo">George</a>
             <nav id="menu_nav">
                 <ul>
                     <li><a href="About.html">About</a></li>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="school.html">School</a></li>
+                    <li><a href="mypet.html">Mypet</a></li>
                     <li><a href="#">Other</a></li>
                 </ul>
             </nav>
@@ -94,12 +93,6 @@
                 </div>
             </div>
 
-            <!-- <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.250461049248!2d114.23291391454802!3d22.306365548312463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401590d8a6741%3A0x2bad5730f746d11c!2z5LqU6YKR5Y-45b6S5rWp5Lit5a24!5e0!3m2!1szh-TW!2suk!4v1585668131588!5m2!1szh-TW!2suk"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-            </div> -->
-
         </div>
 
         <div class="container">
@@ -113,10 +106,12 @@
 
                     <p>De Montfort University Leicester (DMU) is a public university in the city of Leicester, England. It was established in accordance with the Further and Higher Education Act in 1992 as a degree awarding body. The name De Montfort University
                         was taken from Simon de Montfort, a 13th-century Earl of Leicester credited with establishing the first Parliament of England in 1265.
-                    </p>
-                    <p>De Montfort University has approximately 27,000 full and part-time students, 3,240 staff and an annual turnover in the region of £168 million.[1] The university is organised into four faculties: Art, Design, and Humanities (ADH); Business
-                        and Law (BAL); Health and Life Sciences (H&LS); and Computing, Engineering and Media (CEM). It is a Sustainable Development Hub, focusing on Peace, Justice and Strong Institutions, an initiative by the United Nations launched in
-                        2018.
+                        <span id="dots">...</span> </span>
+                        <p id="dmu-more">De Montfort University has approximately 27,000 full and part-time students, 3,240 staff and an annual turnover in the region of £168 million.[1] The university is organised into four faculties: Art, Design, and Humanities (ADH);
+                            Business and Law (BAL); Health and Life Sciences (H&LS); and Computing, Engineering and Media (CEM). It is a Sustainable Development Hub, focusing on Peace, Justice and Strong Institutions, an initiative by the United Nations
+                            launched in 2018.
+                        </p><br><br>
+                        <button id="Btnmore">Read more</button>
                     </p>
 
                     <div class="button">
@@ -134,6 +129,8 @@
 
         </div>
         <div class="container">
+            <h2>Location</h2>
+            <hr><br>
 
             <div id="map-canvas">
                 <div id="map">
