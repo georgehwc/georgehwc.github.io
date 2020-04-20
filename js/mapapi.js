@@ -1,7 +1,5 @@
-console.log("map api js working");
-
-var bounds = new google.maps.LatLngBounds();
-var infowindow = new google.maps.InfoWindow();
+// var bounds = new google.maps.LatLngBounds();
+// var infowindow = new google.maps.InfoWindow();
 
 
 function initMap() {
@@ -12,6 +10,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 2,
         fullscreenControl: false,
+        // draggable: false,
         mapTypeControl: false,
         mapTypeId: 'terrain'
     });
@@ -63,7 +62,7 @@ function initMap() {
         new google.maps.LatLng(lat_2, lng_2)
     ));
 
-
-
-
 }
+
+
+console.log("map api js working");

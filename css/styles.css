@@ -13,8 +13,12 @@ a {
 }
 
 body {
-    background: #242425;
+    background: #e6f0ff;
     font-family: 'Roboto', sans-serif;
+}
+
+img {
+    image-orientation: from-image;
 }
 
 
@@ -57,8 +61,9 @@ body {
     /* margin: 0.25em; */
     background: #092234;
     font-size: 8px;
-    padding: 0.25em;
+    /* padding: 0.25em; */
     text-align: center;
+    height: 10px;
 }
 
 .sticky {
@@ -78,6 +83,7 @@ body {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    height: 65px;
     z-index: 2;
 }
 
@@ -143,11 +149,13 @@ body {
     background-color: #404040;
     text-align: center;
     /* padding: 10px; */
-    transition: 1.0s;
+    /* transition: 1.0s; */
     line-height: normal;
     /* display: none; */
+    position: fixed;
     overflow: hidden;
     height: 0;
+    z-index: 100;
 }
 
 .menu :hover {
@@ -158,8 +166,12 @@ body {
     width: 100%;
 }
 
+.menu li {
+    height: 100px;
+}
+
 .menu li a {
-    line-height: 5;
+    line-height: 6;
     list-style: none;
     text-decoration: none;
     color: #dcdcdc;
@@ -173,6 +185,11 @@ body {
     color: #fff;
     font-size: 17px;
 }
+
+
+/* .menu li a:hover~li {
+    background-color: yellow;
+} */
 
 .main {
     padding: 2%;
@@ -202,14 +219,16 @@ body {
     background: url(../img/Image2020-04-02.jpeg);
     background-position: center;
     background-size: cover;
-    min-height: 450px;
+    min-height: 550px;
 }
 
 .mainSchool {
-    background: url(../img/FDBWA_Szeto_Ho_Secondary_School_southwest_side.jfif);
+    background: url(../img/20170714_213152.jpg);
     background-position: center;
     background-size: cover;
     min-height: 400px;
+    height: 40vh;
+    max-height: 700px;
 }
 
 #bot_footer {
@@ -242,9 +261,42 @@ body {
     display: none;
 }
 
-.content {
-    /* padding: 10px; */
-    margin: 10px 0;
+.szetoho-bg {
+    background-image: url(../img/FDBWA_Szeto_Ho_Secondary_School_southwest_side.jfif);
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 1200px;
+    background-attachment: fixed;
+    margin: -10px;
+    position: relative;
+    background-position: center;
+}
+
+.image-bg::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 100px;
+}
+
+.dmu-bg {
+    background: url(../img/dmu-bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 1200px;
+    background-attachment: fixed;
+    margin: -10px;
+    position: relative;
+    background-position: center;
+}
+
+.content h2 {
+    padding: 10px;
+    /* margin: 10px 0; */
+    /* border: 1px solid; */
 }
 
 .container {
@@ -278,7 +330,7 @@ body {
     display: block;
     background-color: #7792ad;
     transition: all 0.5s;
-    width: 30vw;
+    width: 50vw;
     text-align: center;
     max-width: 400px;
 }
@@ -287,6 +339,7 @@ body {
     border: 1px solid #3e82c8;
     background-color: #72a4d6;
     padding: 2px;
+    cursor: pointer;
 }
 
 #Btnmore:hover {
@@ -317,7 +370,20 @@ body {
 
 .logo-container {
     width: 33%;
-    padding: 30px;
+    padding: 30px 0 0 10px;
+}
+
+.gallery-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.gallery-title .border {
+    width: 200px;
+    height: 6px;
+    background-color: #000000;
+    margin: 30px auto;
 }
 
 .gallery-content {
@@ -325,7 +391,9 @@ body {
     flex: 100%;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .pic-container {
@@ -354,7 +422,7 @@ body {
     padding: 30px;
 }
 
-.description #dmu-more {
+#more {
     display: none;
 }
 
@@ -364,9 +432,8 @@ body {
 
 .description h1 {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.25;
-    margin-bottom: 16px;
 }
 
 .description p {
@@ -389,29 +456,32 @@ body {
     height: 100%;
 }
 
-html,
+
+/* html,
 body,
 #map-canvas {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-}
+} */
 
 #map-canvas {
-    width: 600px;
-    height: 450px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
 }
 
 .showImg {
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .showImg:hover {
-    opacity: 0.7;
+    opacity: 0.9;
+    filter: brightness(100%);
+    transform: scale(1.2);
 }
 
 .modal {
@@ -489,27 +559,6 @@ body,
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
-
-@media screen and (min-width:500px) {
-    body {
-        background: #cfc;
-    }
-    #menu_nav {
-        display: flex;
-    }
-    #menu_button {
-        display: none;
-    }
-    .modal-content {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    body {
-        background: #ccf;
-    }
 }
 
 @-webkit-keyframes bounceInDown {
@@ -590,7 +639,7 @@ body,
     margin: 0 auto;
     margin-top: 80px;
     padding: 10px 20px;
-    width: 35%;
+    width: 70%;
     border-radius: 10px;
 }
 
@@ -629,4 +678,61 @@ body,
 
  ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+@media screen and (min-width:500px) {
+    body {
+        background: #e6f0ff;
+    }
+    #menu_nav {
+        display: flex;
+    }
+    #menu_button {
+        display: none;
+    }
+    .modal-content {
+        width: 100%;
+    }
+    .container .button {
+        width: 30vw;
+    }
+    .logo-container {
+        padding: 30px;
+    }
+    .description h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 16px;
+    }
+    #map-canvas {
+        width: 450px;
+        height: 450px;
+        margin: 0 auto;
+    }
+    .bounceInDown {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        background: #e6f0ff;
+    }
+    #map-canvas {
+        width: 650px;
+        height: 450px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background: #e6f0ff;
+    }
+    #map-canvas {
+        width: 800px;
+        height: 450px;
+        margin: 0 auto;
+    }
 }

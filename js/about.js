@@ -6,9 +6,11 @@ function showMenu() {
     var x = document.getElementById("chk");
     var y = document.getElementById("menu");
     if (x.checked) {
-        y.style.display = "none";
+        y.style.height = "0";
+
     } else {
-        y.style.display = "flex";
+        // y.style.display = "flex";
+        y.style.height = "300px";
     }
 
 }
@@ -16,18 +18,30 @@ function showMenu() {
 window.onscroll = function() { navBarsettop() };
 
 var navbar = document.getElementById("top_menu");
-//var main = document.getElementById("main");
+var main = document.getElementById("main");
 
 var sticky = navbar.offsetTop;
 
 function navBarsettop() {
+    var x = document.getElementById("chk");
+    var y = document.getElementById("menu");
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
-        document.getElementById("main").style.margin = "60px 0 0 0";
+        document.getElementById("main").style.margin = "65px 0 0 0";
+        y.style.marginTop = "55px";
+        y.style.position = "fixed";
+        // if (x.checked) {
+        //     y.style.position = "fixed";
+
+        // }
 
     } else {
         navbar.classList.remove("sticky");
         document.getElementById("main").style.margin = "0 0 0 0";
+
+        y.style.position = "flex";
+        y.style.marginTop = "0px";
+
     }
 
 }
@@ -40,6 +54,7 @@ function background() {
         case "About.html":
             document.getElementById("main").classList.add("mainAbout");
             showimg(test);
+            showmore();
             break;
         case "school.html":
             document.getElementById("main").classList.add("mainSchool");
@@ -50,18 +65,47 @@ function background() {
             document.getElementById("main").classList.add("mainPet");
             showimg(test);
             break;
+
+        case "index.html":
+            document.getElementById("main").classList.add("mainindex");
+            setTimeout(typeWriter, 2500);
+            break;
+
         default:
-            //index page
-            alert("nice");
-            document.getElementById("bot_footer").style.position = "fixed";
+            alert("You went to a wrong page?");
             break;
 
     }
 }
 
+var i = 0;
+var txt = ' This page is create 100% by my self manually!';
+var speed = 70;
+
+function typeWriter() {
+
+    if (i < txt.length) {
+        document.getElementById("typing").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+var i = 1;
+
+function myLoop() {
+    setTimeout(function() {
+        alert('hello');
+        i++;
+        if (i < 10) {
+            myLoop();
+        }
+    }, 3000)
+}
+
 function showmore() {
     var dots = document.getElementById("dots");
-    var moreText = document.getElementById("dmu-more");
+    var moreText = document.getElementById("more");
     var btnText = document.getElementById("Btnmore");
 
     btnText.onclick = function() {
@@ -104,19 +148,20 @@ function showimg(page) {
 
             var img1 = document.getElementById("szetoho");
             img1.onclick = function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
 
-            }
-            document.getElementById("body").scroll = "no";
-            // alert("test start");
+                }
+                // document.getElementById("body").scroll = "no";
+                // alert("test start");
             var img2 = document.getElementById("dmu");
             img2.onclick = function() {
                 modal.style.display = "block";
                 modalImg.src = this.src;
                 captionText.innerHTML = this.alt;
             }
+
 
             break;
 
@@ -135,16 +180,16 @@ function showimg(page) {
             }
             var pet3 = document.getElementById("pet3");
             pet3.onclick = function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-            var pet4 = document.getElementById("pet4");
-            pet4.onclick = function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+                // var pet4 = document.getElementById("pet9");
+                // pet4.onclick = function() {
+                //     modal.style.display = "block";
+                //     modalImg.src = this.src;
+                //     captionText.innerHTML = this.alt;
+                // }
             var pet5 = document.getElementById("pet5");
             pet5.onclick = function() {
                 modal.style.display = "block";
